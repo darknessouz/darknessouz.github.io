@@ -1,91 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#11120f">
-  <title>Coinfolk Privacy Policy</title>
-  <link rel="stylesheet" href="theme.css">
-  <style>
-    body {
-      margin: 0;
-      background: var(--color-bg);
-      color: var(--color-text);
-      font-family: var(--font-body);
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: calc(env(safe-area-inset-top) + 28px) max(20px, env(safe-area-inset-right)) calc(env(safe-area-inset-bottom) + 48px) max(20px, env(safe-area-inset-left));
-    }
-
-    a {
-      color: var(--color-primary);
-    }
-
-    .back {
-      display: inline-block;
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 14px;
-      text-decoration: none;
-      margin-bottom: 24px;
-    }
-
-    .eyebrow {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1.6px;
-      color: var(--color-muted);
-      text-transform: uppercase;
-    }
-
-    h1,
-    h2 {
-      font-family: var(--font-heading);
-      text-wrap: balance;
-    }
-
-    h1 {
-      font-size: 34px;
-      letter-spacing: -1px;
-      line-height: 1.15;
-      margin: 6px 0 4px;
-    }
-
-    h1 span {
-      color: var(--color-primary);
-    }
-
-    h2 {
-      font-size: 18px;
-      margin: 28px 0 6px;
-    }
-
-    p,
-    li {
-      color: #d9d8cf;
-      font-size: 15px;
-    }
-
-    .updated {
-      color: var(--color-muted);
-      font-size: 13px;
-      margin: 0 0 8px;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coinfolk privacy policy | ShameSauce</title>
+<meta name="description" content="What information Coinfolk uses and why.">
+<meta name="theme-color" content="#11120f">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="fonts/fraunces-black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="canonical" href="https://darknessouz.github.io/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ShameSauce">
+<meta property="og:title" content="Coinfolk privacy policy | ShameSauce">
+<meta property="og:description" content="What information Coinfolk uses and why.">
+<meta property="og:url" content="https://darknessouz.github.io/privacy.html">
+<meta property="og:image" content="https://darknessouz.github.io/assets/og-shamesauce.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body>
-  <main>
-    <div class="eyebrow">Coinfolk</div>
+<header class="bar">
+  <div class="wrap">
+    <a class="bar-logo" href="./" aria-label="ShameSauce, home"><img src="assets/shamesauce-logo.svg" alt="ShameSauce" width="732" height="168"></a>
+    <nav aria-label="Main">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap doc">
+    <div class="eyebrow">Coinfolk · ShameSauce</div>
     <h1>Privacy policy<span>.</span></h1>
     <p class="updated">Last updated 9 November 2026</p>
 
-    <p>Coinfolk is an idle coin game made by an independent developer. This page explains what information the game uses and why.
+    <p class="intro">Coinfolk is an idle coin game made by an independent developer. This page explains what information the game uses and why.
       If you have questions, email <a href="mailto:shamesauce@hotmail.com">shamesauce@hotmail.com</a>.</p>
 
     <h2>Your game progress</h2>
@@ -125,15 +76,16 @@
 
     <h2>Changes</h2>
     <p>If anything here changes, this page will be updated and the date at the top will change.</p>
-  </main>
-  <script>
-    // In the Android app, the phone's back button returns to the game.
-    try {
-      window.Capacitor?.Plugins?.App?.addListener('backButton', () => { location.href = 'index.html'; });
-    } catch (error) {
-      // Not running in the app.
-    }
-  </script>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 ShameSauce</span>
+    <nav aria-label="Footer">
+      <a href="coinfolk/">Coinfolk</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:shamesauce@hotmail.com">shamesauce@hotmail.com</a>
+    </nav>
+  </div>
+</footer>
 </body>
-
 </html>
