@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://darknessouz.github.io/sitemap.xml
