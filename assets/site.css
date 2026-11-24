@@ -142,6 +142,13 @@ p { margin: 0; }
   .bar-logo img { height: 24px; }
   .bar nav a { padding: 7px 9px; font-size: 14px; }
 }
+/* four links in the bar: keep them on one line on the narrowest phones */
+@media (max-width: 380px) {
+  .bar .wrap { gap: 10px; }
+  .bar-logo img { height: 20px; }
+  .bar nav { gap: 2px; }
+  .bar nav a { padding: 6px; font-size: 13px; }
+}
 
 /* --- Home: the logo --- */
 
@@ -527,6 +534,47 @@ p { margin: 0; }
 .facts div { padding: 16px 20px; background: var(--ink); }
 .facts dt { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 .facts dd { margin: 4px 0 0; color: var(--cream); font-weight: 600; overflow-wrap: anywhere; }
+
+/* --- A tool's page (Kretslopp): two buttons, a demo, wide screenshots --- */
+
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cta-row.center { justify-content: center; margin-top: 22px; }
+.btn-ghost {
+  background: rgba(244, 236, 224, 0.05);
+  border-color: var(--line-strong);
+  color: var(--cream);
+}
+.btn-ghost:hover { color: var(--cream); background: rgba(244, 236, 224, 0.1); }
+.note { font-size: 14px; color: var(--muted); }
+
+.demo {
+  margin: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--ink-deep);
+  box-shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.8);
+}
+.demo video { display: block; width: 100%; height: auto; aspect-ratio: 1280 / 764; }
+
+.shots-wide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.shots-wide figure { margin: 0; display: grid; gap: 12px; align-content: start; }
+.shots-wide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--ink-deep);
+}
+.shots-wide figcaption { font-size: 15px; color: var(--muted); }
+.shots-wide figcaption b { color: var(--cream); }
+
+@media (max-width: 760px) {
+  .shots-wide { grid-template-columns: minmax(0, 1fr); }
+}
 
 /* --- Privacy policy --- */
 
